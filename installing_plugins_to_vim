@@ -1,0 +1,19 @@
+1.Create autoload and bundle files
+	 mkdir ~/.vim/autoload ~/.vim/bundle
+
+2.Get Pathogen
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+3.Add the following to your .vimrc file, if it does not exist, create .vimrc file in your home directory
+	execute pathogen#infect()
+
+4.Clone the git repos of the plugins inside the ~/.vim/bundle folder
+
+5. Some useful plugins:
+  5.1. NERDTree - Simple file explorer - :NERDTree
+  5.2. MRU - Lists most recently used files - :MRU
+  5.3. NERDCommenter - CommentEasily - <Leader> cc and <Leader> cu
+
+OR
+
+Try Vundle - Yet another one of the coolest plugin management tool.
