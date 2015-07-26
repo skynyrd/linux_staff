@@ -13,6 +13,8 @@ Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:mxw/vim-jsx.git'
 Plugin 'git@github.com:scrooloose/syntastic.git'
+Plugin 'git@github.com:jistr/vim-nerdtree-tabs.git'
+Plugin 'git@github.com:terryma/vim-expand-region.git' "+ to expand, _ to shrink
 
 "For YouCompleteMe, follow these:
 "1. cd ~/.vim/bundle/YouCompleteMe/
@@ -30,6 +32,11 @@ Plugin 'honza/vim-snippets'
 
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
+nmap <C-n> :CtrlP<cr>
+nmap <S-l> :NERDTreeTabsFind<cr>
+silent! nmap <F10> :NERDTreeTabsToggle<cr>
+nmap <F2> :TernRename<cr>
+nmap <C-b> :TernDef <cr>
 
 "For Snipmate ends
 
@@ -62,6 +69,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_autofind=1
+let g:nerdtree_tabs_focus_on_files=1
 
 autocmd CompleteDone * pclose "close preview window after description shown.
 
