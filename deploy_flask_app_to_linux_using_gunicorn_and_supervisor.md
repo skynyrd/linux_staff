@@ -1,5 +1,4 @@
-### How to deploy Flask App to Linux Server 
-### using Gunicorn and Supervisor:
+### How to deploy Flask App to Linux Server using Gunicorn and Supervisor:
 
 * install virtualenv && virtualenvwrapper
 * go to project folder
