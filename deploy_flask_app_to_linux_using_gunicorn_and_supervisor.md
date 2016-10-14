@@ -20,7 +20,8 @@
 * create your_app_name.conf in /etc/supervisor/conf.d
 * fill with sample configuration:
 	
-    ```[program:your_app_name]
+    ```bash
+    [program:your_app_name]
 	
     command = /root/python_workspace/python_envs/mp-admin-indicator/bin/gunicorn your_runnable_file_name:app -b 0.0.0.0:YOUR_PORT
 	directory = /your/project/working/dir
