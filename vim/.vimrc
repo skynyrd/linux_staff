@@ -64,6 +64,7 @@ set tabstop=4	"use 4 spaces when pressing tab
 set title "set title of the terminal
 set shiftwidth=4 "for me tu use true indentation when gg=G
 set nu
+set nohlsearch    - use "n" to go next search result
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
