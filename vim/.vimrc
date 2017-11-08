@@ -34,7 +34,7 @@ imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 nmap <C-n> :CtrlP<cr>
 nmap <S-l> :NERDTreeTabsFind<cr>
-silent! nmap <F10> :NERDTreeTabsToggle<cr>
+silent! nmap <F12> :NERDTreeTabsToggle<cr>
 nmap <F2> :TernRename<cr>
 nmap <C-b> :TernDef <cr>
 
@@ -64,7 +64,6 @@ set tabstop=4	"use 4 spaces when pressing tab
 set title "set title of the terminal
 set shiftwidth=4 "for me tu use true indentation when gg=G
 set nu
-set nohlsearch    - use "n" to go next search result
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -73,6 +72,7 @@ let g:syntastic_check_on_wq = 0
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_autofind=1
 let g:nerdtree_tabs_focus_on_files=1
+let g:syntastic_python_python_exec = '/usr/local/bin/python3.6'
 
 autocmd CompleteDone * pclose "close preview window after description shown.
 
